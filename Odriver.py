@@ -19,7 +19,7 @@ class Odriver:
         self.drive_count = 0
         self.odrives = self.find_all_odrives()
 
-        if self.odrives != None:
+        if self.odrives is not None:
             print('found {} ODrives'.format(len(self.odrives)))
             for odrv in self.odrives:
                 print(odrv.serial_number)
